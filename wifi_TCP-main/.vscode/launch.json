@@ -1,0 +1,12 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "nrf-connect",
+			"request": "launch",
+			"name": "Launch wifi_TCP/build",
+			"config": "/Users/gary/Desktop/dissertation/WiFi-BLE/zephyr/wifi_TCP/build",
+			"runToEntryPoint": "main"
+		}
+	]
+}

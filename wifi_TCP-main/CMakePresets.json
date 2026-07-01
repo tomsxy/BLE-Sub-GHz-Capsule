@@ -1,0 +1,19 @@
+{
+    "version": 2,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 20
+    },
+    "configurePresets": [
+        {
+            "name": "ns",
+            "displayName": "Build for nRF7002 DK nRF5340 application MCU Non Secure",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/ns",
+            "cacheVariables": {
+                "NCS_TOOLCHAIN_VERSION": "NONE",
+                "BOARD": "nrf7002dk/nrf5340/cpuapp/ns"
+            }
+        }
+    ]
+}

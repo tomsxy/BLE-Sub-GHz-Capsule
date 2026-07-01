@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "rfPacketErrorRate_CC1310_LAUNCHXL_tirtos_ccs",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "rfPacketErrorRate_CC1310_LAUNCHXL_tirtos_ccs",
+                "resourceId": "/rfPacketErrorRate_CC1310_LAUNCHXL_tirtos_ccs"
+            },
+            "connections": [
+                {
+                    "name": "Texas Instruments XDS110 USB Debug Probe",
+                    "cores": [
+                        {
+                            "name": "Cortex_M3_0",
+                            "debuggerSettings": {
+                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

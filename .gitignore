@@ -1,0 +1,24 @@
+# Generated build outputs
+build/
+Debug/
+Release/
+7002/
+
+# IDE and local analysis state
+.codegraph/
+.idea/
+*.code-workspace
+
+# OS and language caches
+.DS_Store
+Thumbs.db
+__pycache__/
+*.py[cod]
+
+# Receiver output
+frames_ultra/
+
+# Archives
+*.zip
+*.rar
+*.7z
