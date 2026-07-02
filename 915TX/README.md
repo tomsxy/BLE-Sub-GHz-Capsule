@@ -1,3 +1,35 @@
+# 915TX
+
+[中文说明](README_zh-CN.md) · [Repository overview](../README.md)
+
+This directory is the TI CC1310 transmitter side of the capsule image link. It accepts image application frames from the upstream BLE/SPI bridge and sends them over the 915 MHz Sub-GHz radio link.
+
+## Current behavior
+
+- `rfPacketErrorRate.c` starts transmit mode automatically; no button menu is required for the normal data path.
+- RF setup: high-speed mode, frequency-table entry for 915 MHz, continuous packet count, 250-byte payload, and 8 dBm configured transmit power.
+- `tx.c` contains the SPI input, buffering, packet validation, and RF transmit path.
+- UART output is intended for compact transport and diagnostic counters.
+
+## Main files
+
+| File or directory | Role |
+| --- | --- |
+| `rfPacketErrorRate.c` | Board initialization and automatic TX task entry point |
+| `tx.c` | SPI-to-RF forwarding and TX state machine |
+| `config.c`, `config.h` | RF mode and frequency configuration |
+| `smartrf_settings/` | SmartRF-generated radio settings |
+| `CC1310_LAUNCHXL*`, `Board.h` | CC1310 LaunchPad board configuration |
+| `.project`, `.cproject`, `.ccsproject` | Code Composer Studio project metadata |
+
+## Build
+
+Import this directory as an existing project in TI Code Composer Studio. The project depends on TI-RTOS and a compatible SimpleLink CC13x0 SDK. Build outputs such as `Debug/` and `Release/` are intentionally not committed.
+
+Keep the 250-byte frame definition synchronized with `BLE-SPI-Rx`, `915RX`, and the Jetson receiver.
+
+## Original TI example documentation
+
 # rfPacketErrorRate
 ---
 

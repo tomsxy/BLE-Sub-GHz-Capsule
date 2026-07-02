@@ -33,11 +33,11 @@ The Jetson program tracks packet alignment, offset gaps, short reads, and invali
 
 | Path | Purpose |
 | --- | --- |
-| `BLE-SPI-Rx/` | Nordic/Zephyr BLE receiver that forwards image data over SPI |
-| `915TX/` | TI CC1310 SPI-to-915-MHz transmitter firmware |
-| `915RX/` | TI CC1310 915-MHz-to-SPI receiver firmware |
+| [`BLE-SPI-Rx/`](BLE-SPI-Rx/README.md) | Nordic/Zephyr BLE receiver that forwards image data over SPI |
+| [`915TX/`](915TX/README.md) | TI CC1310 SPI-to-915-MHz transmitter firmware |
+| [`915RX/`](915RX/README.md) | TI CC1310 915-MHz-to-SPI receiver firmware |
 | `jetson_spi_slave_jpeg_rx_simple.c` | Linux/Jetson SPI receiver and JPEG reassembler |
-| `wifi_TCP-main/` | Nordic nRF7002 Wi-Fi/BLE image transport experiment and host receiver utilities |
+| [`wifi_TCP-main/`](wifi_TCP-main/README.md) | Nordic nRF7002 Wi-Fi/BLE image transport experiment and host receiver utilities |
 
 Generated build directories, Raspberry Pi experiments, receive-output images, and the original ZIP archive are intentionally excluded.
 

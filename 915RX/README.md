@@ -1,3 +1,35 @@
+# 915RX
+
+[中文说明](README_zh-CN.md) · [Repository overview](../README.md)
+
+This directory is the TI CC1310 receiver side of the capsule image link. It receives 250-byte packets from the 915 MHz Sub-GHz link and forwards the recovered application frames to the Jetson side over SPI.
+
+## Current behavior
+
+- `rfPacketErrorRate.c` starts receive mode automatically at task priority 3.
+- RF setup: high-speed mode, frequency-table entry for 915 MHz, continuous packet count, and 250-byte payload.
+- `rx.c` contains RF reception, packet checks, buffering, SPI forwarding, and transport diagnostics.
+- RF front-end control pins are initialized when the selected CC1310 board configuration provides them.
+
+## Main files
+
+| File or directory | Role |
+| --- | --- |
+| `rfPacketErrorRate.c` | Board initialization and automatic RX task entry point |
+| `rx.c` | RF-to-SPI forwarding and RX state machine |
+| `config.c`, `config.h` | RF mode and frequency configuration |
+| `smartrf_settings/` | SmartRF-generated radio settings |
+| `CC1310_LAUNCHXL*`, `Board.h` | CC1310 LaunchPad board configuration |
+| `.project`, `.cproject`, `.ccsproject` | Code Composer Studio project metadata |
+
+## Build
+
+Import this directory as an existing project in TI Code Composer Studio. The project depends on TI-RTOS and a compatible SimpleLink CC13x0 SDK. Build outputs such as `Debug/` and `Release/` are intentionally not committed.
+
+The SPI consumer must use the same transfer size, byte order, and application-frame boundaries as this firmware. The repository's Jetson receiver defaults to 250-byte chunks.
+
+## Original TI example documentation
+
 # rfPacketErrorRate
 ---
 
