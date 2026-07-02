@@ -7,7 +7,7 @@
 ## 数据链路
 
 ```text
-BLE 数据源
+BLE-Sub-GHz Capsule
    -> BLE-SPI-Rx
    -> SPI
    -> CC1310 915TX

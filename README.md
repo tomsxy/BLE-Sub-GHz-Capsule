@@ -7,7 +7,7 @@ This repository contains the firmware and host-side receiver for a capsule image
 ## Data path
 
 ```text
-BLE source
+BLE-Sub-GHz Capsule
    -> BLE-SPI-Rx
    -> SPI
    -> CC1310 915TX
