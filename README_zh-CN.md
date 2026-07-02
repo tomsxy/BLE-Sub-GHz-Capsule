@@ -2,6 +2,8 @@
 
 [English README](README.md)
 
+**用途：** 说明图像数据从 BLE 发送端、经过 915 MHz 中继、到达 Jetson 接收端的完整链路。
+
 本仓库包含胶囊图像通信原型的固件和主机端接收程序。完整链路组合了低功耗蓝牙、SPI、915 MHz Sub-GHz 无线传输，以及 Jetson 端的 JPEG 重组。
 
 ## 数据链路
