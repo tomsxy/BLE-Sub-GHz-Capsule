@@ -41,9 +41,9 @@ The Jetson program tracks packet alignment, offset gaps, short reads, and invali
 
 ## Toolchains
 
-- `915TX` and `915RX`: Texas Instruments Code Composer Studio, TI-RTOS, and the SimpleLink CC13x0 SDK for CC1310 LaunchPad.
-- `BLE-SPI-Rx`: Nordic nRF Connect SDK/Zephyr. Import the directory as an application and select a supported board configuration from `boards/`.
-- `wifi_TCP-main`: Nordic nRF Connect SDK/Zephyr with an nRF7002 DK configuration.
+- `915TX` and `915RX`: Texas Instruments Code Composer Studio, TI-RTOS, and SimpleLink CC13x0 SDK `4.20.02.07` for CC1310 LaunchPad.
+- `BLE-SPI-Rx`: Nordic nRF Connect SDK `v3.0.1`/Zephyr. Import the directory as an application and select a supported board configuration from `boards/`.
+- `wifi_TCP-main`: Nordic nRF Connect SDK `v3.0.1`/Zephyr with an nRF7002 DK configuration.
 - Jetson receiver: Linux C toolchain, pthreads, and the kernel `spidev` interface.
 
 Exact SDK versions depend on the installed vendor workspace. The project files and board overlays are retained so each application can be imported into its native toolchain.

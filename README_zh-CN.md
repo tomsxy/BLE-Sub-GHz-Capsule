@@ -41,9 +41,9 @@ Jetson 程序会统计包边界、offset gap、短读和非法包头。只有同
 
 ## 开发工具链
 
-- `915TX` 和 `915RX`：Texas Instruments Code Composer Studio、TI-RTOS，以及适用于 CC1310 LaunchPad 的 SimpleLink CC13x0 SDK。
-- `BLE-SPI-Rx`：Nordic nRF Connect SDK/Zephyr。将该目录作为应用导入，并从 `boards/` 中选择受支持的开发板配置。
-- `wifi_TCP-main`：Nordic nRF Connect SDK/Zephyr，使用 nRF7002 DK 配置。
+- `915TX` 和 `915RX`：Texas Instruments Code Composer Studio、TI-RTOS，以及适用于 CC1310 LaunchPad 的 SimpleLink CC13x0 SDK `4.20.02.07`。
+- `BLE-SPI-Rx`：Nordic nRF Connect SDK `v3.0.1`/Zephyr。将该目录作为应用导入，并从 `boards/` 中选择受支持的开发板配置。
+- `wifi_TCP-main`：Nordic nRF Connect SDK `v3.0.1`/Zephyr，使用 nRF7002 DK 配置。
 - Jetson 接收端：Linux C 编译工具链、pthreads 和内核 `spidev` 接口。
 
 准确 SDK 版本取决于本机已有的厂商开发环境。仓库保留了工程文件和开发板 overlay，便于在对应工具链中导入。
