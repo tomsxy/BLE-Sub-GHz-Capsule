@@ -2,6 +2,8 @@
 
 [中文说明](README_zh-CN.md)
 
+**Purpose:** Document the complete image data path from the BLE transmitter through the 915 MHz relay to the Jetson receiver.
+
 This repository contains the firmware and host-side receiver for a capsule image communication prototype. The complete path combines Bluetooth Low Energy, SPI, a 915 MHz Sub-GHz link, and JPEG reconstruction on Jetson.
 
 ## Data path
