@@ -46,7 +46,7 @@ Jetson 程序会统计包边界、offset gap、短读和非法包头。只有同
 - `wifi_TCP-main`：Nordic nRF Connect SDK `v3.0.1`/Zephyr，使用 nRF7002 DK 配置。
 - Jetson 接收端：Linux C 编译工具链、pthreads 和内核 `spidev` 接口。
 
-准确 SDK 版本取决于本机已有的厂商开发环境。仓库保留了工程文件和开发板 overlay，便于在对应工具链中导入。
+使用上述版本可复现原始开发环境。仓库保留了工程文件和开发板 overlay，便于在对应工具链中导入。
 
 ## Jetson 接收程序
 

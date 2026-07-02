@@ -46,7 +46,7 @@ The Jetson program tracks packet alignment, offset gaps, short reads, and invali
 - `wifi_TCP-main`: Nordic nRF Connect SDK `v3.0.1`/Zephyr with an nRF7002 DK configuration.
 - Jetson receiver: Linux C toolchain, pthreads, and the kernel `spidev` interface.
 
-Exact SDK versions depend on the installed vendor workspace. The project files and board overlays are retained so each application can be imported into its native toolchain.
+Use the versions listed above to reproduce the original development environment. The project files and board overlays are retained so each application can be imported into its native toolchain.
 
 ## Jetson receiver
 
