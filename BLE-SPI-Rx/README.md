@@ -2,6 +2,8 @@
 
 [中文说明](README_zh-CN.md) · [Repository overview](../README.md)
 
+**Function:** Receive capsule images over BLE and transmit them to `915TX` over SPI.
+
 This directory is the Nordic nRF Connect SDK/Zephyr bridge at the input of the Sub-GHz path. It receives capsule image data over Bluetooth Low Energy and forwards the stream to `915TX` over SPI.
 
 ## Responsibilities

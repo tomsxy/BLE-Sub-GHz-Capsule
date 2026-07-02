@@ -2,6 +2,8 @@
 
 [English](README.md) · [仓库总览](../README_zh-CN.md)
 
+**功能：** 通过 BLE 接收胶囊图像，再通过 SPI 发送给 `915TX`。
+
 本目录是 Sub-GHz 链路输入端的 Nordic nRF Connect SDK/Zephyr 桥接工程。它通过低功耗蓝牙接收胶囊图像数据，再经 SPI 将数据流转发给 `915TX`。
 
 ## 主要职责
