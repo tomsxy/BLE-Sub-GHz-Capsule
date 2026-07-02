@@ -34,9 +34,9 @@ Jetson 程序会统计包边界、offset gap、短读和非法包头。只有同
 | 路径 | 用途 |
 | --- | --- |
 | [`wifi_TCP-main/`](wifi_TCP-main/README_zh-CN.md) | Nordic/Zephyr BLE 图像发送端 |
-| [`BLE-SPI-Rx/`](BLE-SPI-Rx/README_zh-CN.md) | Nordic/Zephyr BLE 接收端，通过 SPI 转发图像数据 |
-| [`915TX/`](915TX/README_zh-CN.md) | TI CC1310 SPI 到 915 MHz 的发送端固件 |
-| [`915RX/`](915RX/README_zh-CN.md) | TI CC1310 915 MHz 到 SPI 的接收端固件 |
+| [`BLE-SPI-Rx/`](BLE-SPI-Rx/README_zh-CN.md) | Nordic/Zephyr BLE 接收端，SPI 发送端 |
+| [`915TX/`](915TX/README_zh-CN.md) | TI CC1310，SPI 接收端，915 MHz 发送端 |
+| [`915RX/`](915RX/README_zh-CN.md) | TI CC1310，915 MHz 接收端，SPI 发送端 |
 | `jetson_spi_slave_jpeg_rx_simple.c` | Linux/Jetson SPI 接收与 JPEG 重组程序 |
 
 仓库有意排除了构建产物、树莓派实验、接收结果图片和原始 ZIP 压缩包。
