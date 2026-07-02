@@ -1,3 +1,5 @@
+/* Jetson SPI slave receiver: receives data from 915RX and reconstructs JPEG images. */
+
 #include <fcntl.h>
 #include <errno.h>
 #include <getopt.h>
