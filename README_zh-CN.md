@@ -39,8 +39,6 @@ Jetson 程序会统计包边界、offset gap、短读和非法包头。只有同
 | [`915RX/`](915RX/README_zh-CN.md) | TI CC1310，915 MHz 接收端，SPI 发送端 |
 | `jetson_spi_slave_jpeg_rx_simple.c` | Linux/Jetson SPI 接收与 JPEG 重组程序 |
 
-仓库有意排除了构建产物、树莓派实验、接收结果图片和原始 ZIP 压缩包。
-
 ## 开发工具链
 
 - `915TX` 和 `915RX`：Texas Instruments Code Composer Studio、TI-RTOS，以及适用于 CC1310 LaunchPad 的 SimpleLink CC13x0 SDK。

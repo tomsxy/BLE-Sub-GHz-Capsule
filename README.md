@@ -39,8 +39,6 @@ The Jetson program tracks packet alignment, offset gaps, short reads, and invali
 | [`915RX/`](915RX/README.md) | TI CC1310, 915-MHz receiver, SPI transmitter |
 | `jetson_spi_slave_jpeg_rx_simple.c` | Linux/Jetson SPI receiver and JPEG reassembler |
 
-Generated build directories, Raspberry Pi experiments, receive-output images, and the original ZIP archive are intentionally excluded.
-
 ## Toolchains
 
 - `915TX` and `915RX`: Texas Instruments Code Composer Studio, TI-RTOS, and the SimpleLink CC13x0 SDK for CC1310 LaunchPad.
