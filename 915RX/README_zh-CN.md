@@ -2,6 +2,8 @@
 
 [English](README.md) · [仓库总览](../README_zh-CN.md)
 
+**功能：** 接收 915 MHz 无线数据，并作为 SPI 主机将数据发送给 Jetson。
+
 本目录是胶囊图像链路中的 TI CC1310 接收端。它从 915 MHz Sub-GHz 无线链路接收 250 字节数据包，再通过 SPI 将恢复出的应用帧转发给 Jetson。
 
 ## 当前行为

@@ -2,6 +2,8 @@
 
 [中文说明](README_zh-CN.md) · [Repository overview](../README.md)
 
+**Function:** Receive 915 MHz transmissions and act as the SPI master to send the data to Jetson.
+
 This directory is the TI CC1310 receiver side of the capsule image link. It receives 250-byte packets from the 915 MHz Sub-GHz link and forwards the recovered application frames to the Jetson side over SPI.
 
 ## Current behavior
