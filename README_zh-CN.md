@@ -7,7 +7,7 @@
 ## 数据链路
 
 ```text
-BLE-Sub-GHz Capsule
+wifi_TCP-main
    -> BLE-SPI-Rx
    -> SPI
    -> CC1310 915TX
@@ -33,11 +33,11 @@ Jetson 程序会统计包边界、offset gap、短读和非法包头。只有同
 
 | 路径 | 用途 |
 | --- | --- |
+| [`wifi_TCP-main/`](wifi_TCP-main/README_zh-CN.md) | Nordic nRF7002 Wi-Fi/BLE 图像传输实验及主机接收工具 |
 | [`BLE-SPI-Rx/`](BLE-SPI-Rx/README_zh-CN.md) | Nordic/Zephyr BLE 接收端，通过 SPI 转发图像数据 |
 | [`915TX/`](915TX/README_zh-CN.md) | TI CC1310 SPI 到 915 MHz 的发送端固件 |
 | [`915RX/`](915RX/README_zh-CN.md) | TI CC1310 915 MHz 到 SPI 的接收端固件 |
 | `jetson_spi_slave_jpeg_rx_simple.c` | Linux/Jetson SPI 接收与 JPEG 重组程序 |
-| [`wifi_TCP-main/`](wifi_TCP-main/README_zh-CN.md) | Nordic nRF7002 Wi-Fi/BLE 图像传输实验及主机接收工具 |
 
 仓库有意排除了构建产物、树莓派实验、接收结果图片和原始 ZIP 压缩包。
 
