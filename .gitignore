@@ -1,3 +1,5 @@
+# Purpose: exclude generated builds, caches, receiver output, and local archives.
+
 # Generated build outputs
 build/
 Debug/
