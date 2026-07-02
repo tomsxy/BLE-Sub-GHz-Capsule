@@ -2,6 +2,8 @@
 
 [中文说明](README_zh-CN.md) · [Repository overview](../README.md)
 
+**Function:** Transmit capsule images over BLE.
+
 This directory is an alternative image transport experiment based on the Nordic nRF7002 DK. It combines Wi-Fi socket transport, BLE control/data support, embedded test images, and desktop receiver utilities.
 
 ## Responsibilities

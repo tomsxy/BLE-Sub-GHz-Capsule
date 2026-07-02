@@ -2,6 +2,8 @@
 
 [English](README.md) · [仓库总览](../README_zh-CN.md)
 
+**功能：** 通过 BLE 发送胶囊图像。
+
 本目录是基于 Nordic nRF7002 DK 的另一套图像传输实验工程，包含 Wi-Fi socket 传输、BLE 控制/数据链路、内置测试图像和桌面接收工具。
 
 ## 主要职责
