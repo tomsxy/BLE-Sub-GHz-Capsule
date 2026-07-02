@@ -2,6 +2,8 @@
 
 [中文说明](README_zh-CN.md) · [Repository overview](../README.md)
 
+**Function:** Receive image data over SPI and transmit it over the 915 MHz radio link.
+
 This directory is the TI CC1310 transmitter side of the capsule image link. It accepts image application frames from the upstream BLE/SPI bridge and sends them over the 915 MHz Sub-GHz radio link.
 
 ## Current behavior
